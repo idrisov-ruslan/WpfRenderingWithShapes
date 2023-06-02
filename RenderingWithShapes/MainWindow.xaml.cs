@@ -35,7 +35,12 @@ namespace RenderingWithShapes
             switch (_currentShape)
             {
                 case SelectedShape.Circle:
-                    shapeToRender = new Ellipse() { Fill = Brushes.Green, Width = 35, Height = 35 };
+                    shapeToRender = new Ellipse() { Width = 35, Height = 35 };
+                    RadialGradientBrush brush = new RadialGradientBrush();
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF77F177"), 0));
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF11E611"), 1));
+                    brush.GradientStops.Add(new GradientStop((Color)ColorConverter.ConvertFromString("#FF5A8E5A"), 0.545));
+                    shapeToRender.Fill = brush;
                     break;
 
                 case SelectedShape.Rectangle:
