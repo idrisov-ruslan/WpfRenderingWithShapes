@@ -63,6 +63,13 @@ namespace RenderingWithShapes
                 default:
                     return;
             }
+
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                shapeToRender.RenderTransform = rotate;
+            }
+
             Canvas.SetLeft(shapeToRender, e.GetPosition(canvasDrawingArea).X);
             Canvas.SetTop(shapeToRender, e.GetPosition(canvasDrawingArea).Y);
             canvasDrawingArea.Children.Add(shapeToRender);
@@ -90,6 +97,19 @@ namespace RenderingWithShapes
             if (result != null)
             {
                 canvasDrawingArea.Children.Remove(result.VisualHit as Shape);
+            }
+        }
+
+        private void flipCanvas_Click(object sender, RoutedEventArgs e)
+        {
+            if (flipCanvas.IsChecked == true)
+            {
+                RotateTransform rotate = new RotateTransform(-180);
+                canvasDrawingArea.LayoutTransform = rotate;
+            }
+            else
+            {
+                canvasDrawingArea.LayoutTransform = null;
             }
         }
     }

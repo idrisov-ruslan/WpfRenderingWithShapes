@@ -28,9 +28,9 @@
                         <RadioButton Name="lineOption" GroupName="shapeSelection" Click="lineOption_Click">
                             <Line Width="35" Height="35" StrokeThickness="10" Stroke="Blue" X1="10" Y1="10" X2="25" Y2="25" StrokeStartLineCap="Triangle" StrokeEndLineCap="Round"/>
                         </RadioButton>
+                        <ToggleButton Name="flipCanvas" Click="flipCanvas_Click" Content="Flip Canvas"/>
                     </ToolBar>
-                    <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="canvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="canvasDrawingArea_MouseRightButtonDown">
-
+                    <Canvas Background="LightBlue" Name="canvasDrawingArea" MouseLeftButtonDown="canvasDrawingArea_MouseLeftButtonDown" MouseRightButtonDown="canvasDrawingArea_MouseRightButtonDown" ClipToBounds="True">
                     </Canvas>
                 </DockPanel>
             </TabItem>
@@ -68,6 +68,63 @@
                         </Path.Data>
                     </Path>
                     <Path Stroke="Black" StrokeThickness="3" Data="M 10 75 C 70 15 250 270 300 175 H 240"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Трансформации">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="40" Height="100" Fill="Red">
+                        <Rectangle.LayoutTransform>
+                            <RotateTransform Angle="45"/>
+                        </Rectangle.LayoutTransform>
+                    </Rectangle>
+                    <Button Content="Click me!" Width="95" Height="40">
+                        <Button.LayoutTransform>
+                            <SkewTransform AngleX="20" AngleY="20"/>
+                        </Button.LayoutTransform>
+                    </Button>
+                    <Ellipse Fill="Blue" Width="5" Height="5">
+                        <Ellipse.LayoutTransform>
+                            <ScaleTransform ScaleX="20" ScaleY="20"/>
+                        </Ellipse.LayoutTransform>
+                    </Ellipse>
+                    <TextBox Text="Me Too!" Width="50" Height="40">
+                        <TextBox.LayoutTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="45"/>
+                                <SkewTransform AngleX="5" AngleY="20"/>
+                            </TransformGroup>
+                        </TextBox.LayoutTransform>
+                    </TextBox>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Трансформация всей панели">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel.LayoutTransform>
+                        <RotateTransform Angle="45"/>
+                    </StackPanel.LayoutTransform>
+                    <Rectangle Width="40" Height="100" Fill="Red">
+                        <Rectangle.LayoutTransform>
+                            <RotateTransform Angle="45"/>
+                        </Rectangle.LayoutTransform>
+                    </Rectangle>
+                    <Button Content="Click me!" Width="95" Height="40">
+                        <Button.LayoutTransform>
+                            <SkewTransform AngleX="20" AngleY="20"/>
+                        </Button.LayoutTransform>
+                    </Button>
+                    <Ellipse Fill="Blue" Width="5" Height="5">
+                        <Ellipse.LayoutTransform>
+                            <ScaleTransform ScaleX="20" ScaleY="20"/>
+                        </Ellipse.LayoutTransform>
+                    </Ellipse>
+                    <TextBox Text="Me Too!" Width="50" Height="40">
+                        <TextBox.LayoutTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="45"/>
+                                <SkewTransform AngleX="5" AngleY="20"/>
+                            </TransformGroup>
+                        </TextBox.LayoutTransform>
+                    </TextBox>
                 </StackPanel>
             </TabItem>
         </TabControl>
