@@ -1,0 +1,15 @@
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\bin\Debug\RenderingWithShapes.exe.config
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\bin\Debug\RenderingWithShapes.exe
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\bin\Debug\RenderingWithShapes.pdb
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.csproj.AssemblyReference.cache
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\MainWindow.g.cs
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\App.g.cs
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes_MarkupCompile.cache
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes_MarkupCompile.lref
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\MainWindow.baml
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.g.resources
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.Properties.Resources.resources
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.csproj.GenerateResource.cache
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.csproj.CoreCompileInputs.cache
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.exe
+E:\Projects2\backup\Learn\WpfRenderingWithShapes\RenderingWithShapes\obj\Debug\RenderingWithShapes.pdb

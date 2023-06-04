@@ -50,6 +50,35 @@
                     </Path>
                 </StackPanel>
             </TabItem>
+            <TabItem Header="Просто2">
+                <StackPanel Orientation="Vertical">
+                    <Rectangle Width="200" Height="100">
+                        <Rectangle.Fill>
+                            <DrawingBrush>
+                                <DrawingBrush.Drawing>
+                                    <GeometryDrawing>
+                                        <GeometryDrawing.Geometry>
+                                            <GeometryGroup>
+                                                <EllipseGeometry Center="75,70" RadiusX="30" RadiusY="30"/>
+                                                <RectangleGeometry Rect="25,55 100 30"/>
+                                                <LineGeometry StartPoint="0,0" EndPoint="70,30"/>
+                                                <LineGeometry StartPoint="70,30" EndPoint="0,30"/>
+                                            </GeometryGroup>
+                                        </GeometryDrawing.Geometry>
+                                        <GeometryDrawing.Pen>
+                                            <Pen Brush="Blue" Thickness="3"/>
+                                        </GeometryDrawing.Pen>
+                                        <GeometryDrawing.Brush>
+                                            <SolidColorBrush Color="Orange"/>
+                                        </GeometryDrawing.Brush>
+                                    </GeometryDrawing>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBox>Нарисовано с помощью кисти</TextBox>
+                </StackPanel>
+            </TabItem>
             <TabItem Header="Path">
                 <StackPanel>
                     <Path Stroke="Black" StrokeThickness="1">
